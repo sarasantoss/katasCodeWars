@@ -1,0 +1,26 @@
+/* A proposta da atividade é que dois números decimais sejam somados e convertidos e ,assim, seja retornada sua notação binária*/
+
+
+function conversao (num1, num2) {
+//variaveis necessarias
+  let resto
+  let resultado
+  let result = ""
+
+//soma dos valores
+  let soma = num1 + num2
+  
+//conersao da soma de decimal para binario
+  do{
+     resto = soma % 2
+     resultado = soma/2
+     resto = resto.toString()
+     resultado = resultado.toString()
+     result = resto + result
+     resultado = parseInt(resultado)
+     soma = resultado
+       } while (resultado >= 1)
+
+  return result
+   }
+console.log(conversao(8,1));
