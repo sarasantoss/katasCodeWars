@@ -1,3 +1,5 @@
+//A proposta da atividade é retornar um valor booleano que detecte se determeminada string é um pangrama(contém todas as letras do alfabeto pelo menos uma vez), ou não.
+
 let frase = "The quick brown fox jumps over the lazy dog."
 
 function isPangram (palavra) {
@@ -17,4 +19,4 @@ return resultado
 }
 
 //resultado
-console.log(isPangram(frase))
+console.log(isPangram(frase)) //deve retornar true
