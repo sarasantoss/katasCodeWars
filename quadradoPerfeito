@@ -1,0 +1,15 @@
+// O objetivo da atividade é verificar se um número é um quadrado perfeito
+function isSquare (num){
+    let i = 0
+    let result
+    
+    do {
+        let resultado = i * i
+        result = resultado == num? true : false
+        i++
+    } while (i <= num && result == false)
+
+    return result
+}
+ let numero = 1 //variável a ser testada
+ console.log(isSquare(numero)) //resultado (true ou false)
