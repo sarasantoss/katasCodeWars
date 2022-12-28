@@ -1,0 +1,20 @@
+let frase = "The quick brown fox jumps over the lazy dog."
+
+function isPangram (palavra) {
+let frase = palavra.toLowerCase()
+let vetorfrase = frase.split("")
+let i = 0
+let alfabeto = "abcdefghijklmnopqrstuvwxyz"
+let alfabeto2 = alfabeto.split("")
+let resultado
+  
+   do{
+      resultado = vetorfrase.includes(alfabeto2[i])
+      i++
+   }while(i < alfabeto2.length && resultado == true)
+
+return resultado
+}
+
+//resultado
+console.log(isPangram(frase))
