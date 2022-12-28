@@ -1,0 +1,28 @@
+//Verificar se determinado número é narcisista ou não (true ou false)
+
+function narcissistic(num) {
+  //manipulação do parâmetro
+    let num2 = num.toString()
+    let vetor = Array.from(num2)
+    let vetorN = vetor.map(Number)
+   
+    let tamanho = vetorN.length
+    let i = 0
+    let resultado = 0
+    
+//operação
+do{
+    let operacao = vetorN[i]**tamanho
+    resultado = operacao + resultado
+    i++
+}while(i < vetorN.length) 
+
+
+let resultadoF = resultado == num? true: false //o resultado é igual ao parâmetro?
+return resultadoF
+}
+
+let numero = 153
+
+//resultado
+console.log(narcissistic(numero)) //Deve retornar true
